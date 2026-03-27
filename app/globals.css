@@ -128,3 +128,9 @@
     @apply font-sans;
   }
 }
+
+@media print {
+  aside, header, nav, .no-print { display: none !important; }
+  body { background: white !important; color: black !important; }
+  .print\:border-0 { border: none !important; }
+}
