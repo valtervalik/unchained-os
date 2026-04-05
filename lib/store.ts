@@ -173,6 +173,6 @@ export const useStore = create<OsStore>()(
 
       clearAlerts: () => set({ alerts: [] }),
     }),
-    { name: 'unchained-os' },
+    { name: 'unchained-deal-analyzer' },
   ),
 )

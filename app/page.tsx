@@ -59,9 +59,9 @@ export default function DashboardPage() {
                   <Zap className="w-8 h-8 text-violet-400" />
                 </div>
               </div>
-              <h2 className="text-2xl font-black text-white mb-2">Welcome to Unchained OS</h2>
+              <h2 className="text-2xl font-black text-white mb-2">Welcome to Unchained Deal Analyzer</h2>
               <p className="text-zinc-400 mb-6 max-w-md mx-auto">
-                Your private equity operating system. Start by analyzing your first deal.
+                Your private equity deal analyzer. Start by analyzing your first deal.
               </p>
               <Link href="/deal-analyzer">
                 <Button className="bg-violet-600 hover:bg-violet-700 gap-2">

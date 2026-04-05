@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Unchained OS',
-  description: 'Private Equity Operating System',
+  title: 'Unchained Deal Analyzer',
+  description: 'Private Equity Deal Analyzer',
 }
 
 export default function RootLayout({
