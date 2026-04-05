@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Noto_Sans_Myanmar, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { Toaster } from 'sonner'
 import { TooltipProvider } from '@/components/ui/tooltip'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+const myanmarFont = Noto_Sans_Myanmar({
+  variable: '--font-sans',
+  subsets: ['latin', 'myanmar'],
+  weight: ['300', '400', '500', '600', '700'],
 })
 
 const geistMono = Geist_Mono({
@@ -27,9 +28,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+      className={`${myanmarFont.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="h-full bg-zinc-950 text-zinc-100">
+      <body className="h-full bg-background text-foreground">
         <TooltipProvider>
           {children}
         </TooltipProvider>
@@ -37,7 +38,7 @@ export default function RootLayout({
           theme="dark"
           position="bottom-right"
           toastOptions={{
-            style: { background: '#18181b', border: '1px solid #3f3f46', color: '#f4f4f5' },
+            style: { background: '#6b1877', border: '1px solid #9a18b3', color: '#fcf4ff' },
           }}
         />
       </body>
